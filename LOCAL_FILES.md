@@ -1,8 +1,5 @@
 # Preparing local files (EN / FR)
 
-**EN — Public source package vs private complete package.** GitHub-ready files intentionally do **not** include Lenovo/Unisoc firmware, exact prebuilt RAM payloads or third-party Windows executables. This is a redistribution/privacy choice, not a claim they are unnecessary. The separate **PRIVATE COMPLETE** ZIP includes the tested V9 snapshot and the two boot images from the tested device; it must not be uploaded unchanged to a public repository. Obtain the original third-party tools from their authors, and build the RAM images locally from your own exact S200162 stock images if you cannot lawfully distribute prebuilt binaries.
-
-**FR — Dépôt public vs archive complète privée.** Le dépôt publiable n'inclut pas les images Lenovo/Unisoc, le chargeur RAM précompilé ni les exécutables Windows tiers. L’archive **PRIVÉE COMPLÈTE** contient la V9 testée et les deux images `boot_a` de l'exemplaire testé ; **ne pas la publier telle quelle**. Utiliser les outils de leurs auteurs et générer localement les images depuis son propre firmware exact S200162.
 
 ## Recommended layout / structure
 
