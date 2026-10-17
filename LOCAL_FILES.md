@@ -52,7 +52,7 @@ The code verifies known SHA-256 hashes before patching; it refuses unknown image
 py -3 tools\verify\verify_package.py --bundle "local\V9\prepared_current"
 ```
 
-Files listed and SHA-256 hashes: [evidence/SHA256SUMS.txt](docs/evidence/SHA256SUMS.txt).
+Files listed and SHA-256 hashes: [evidence/SHA256SUMS.txt](SHA256SUMS.txt).
 
 ## Mandatory external tools / Outils externes nécessaires
 

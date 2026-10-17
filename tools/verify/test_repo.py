@@ -9,7 +9,7 @@ class RepoTests(unittest.TestCase):
  def test_hash_count(self):self.assertEqual(len(v.EXPECTED),5)
  def test_v9_source_present(self):self.assertTrue((ROOT/'tools/v9/sources/tb328fu_v9.py').is_file())
  def test_docs(self):
-  for n in ['README.md','README.fr.md','docs/en/UNLOCK.md','docs/fr/DEVERROUILLAGE.md','docs/en/ROOT.md','docs/fr/ROOT.md']:
+  for n in ['README.md','README.fr.md','UNLOCK_EN.md','DEVERROUILLAGE_FR.md','ROOT_EN.md','ROOT_FR.md']:
    self.assertTrue((ROOT/n).is_file(),n)
  def test_original_runner_blocks_other_firmware(self):
   src=(ROOT/'tools/v9/sources/tb328fu_v9.py').read_text(encoding='utf-8')

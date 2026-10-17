@@ -130,4 +130,4 @@ Le préfixe SELinux `u:r:magisk:s0` et l'UID 0 confirment que le gestionnaire Ma
 
 ---
 
-Voir également [dépannage](DEPANNAGE.md) et [déverrouillage](DEVERROUILLAGE.md).
+Voir également [dépannage](DEPANNAGE_FR.md) et [déverrouillage](DEVERROUILLAGE_FR.md).

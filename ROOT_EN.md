@@ -1,6 +1,6 @@
 # Magisk root, tested on TB328FU S200162 slot A
 
-**Observed result on 17 October 2026:** Magisk 30.7 root, `adb shell su -c id` returned `uid=0(root) gid=0(root) groups=0(root) context=u:r:magisk:s0`. This is a separate step AFTER the persistent bootloader unlock documented in [UNLOCK.md](UNLOCK.md). It does not require installing a custom ROM.
+**Observed result on 17 October 2026:** Magisk 30.7 root, `adb shell su -c id` returned `uid=0(root) gid=0(root) groups=0(root) context=u:r:magisk:s0`. This is a separate step AFTER the persistent bootloader unlock documented in [UNLOCK.md](UNLOCK_EN.md). It does not require installing a custom ROM.
 
 ## 1. Preconditions
 
@@ -114,6 +114,6 @@ If Fastboot remains accessible and you are certain the saved `ROOT_BACKUP\boot_a
 "C:\Program Files (x86)\Minimal ADB and Fastboot\fastboot.exe" reboot
 ```
 
-This **removes Magisk modifications from the boot image**, but it **does not re-lock** the bootloader or undo any earlier persistent changes from V9. If Fastboot itself is broken, stop rather than improvising an erase. See [troubleshooting](TROUBLESHOOTING.md).
+This **removes Magisk modifications from the boot image**, but it **does not re-lock** the bootloader or undo any earlier persistent changes from V9. If Fastboot itself is broken, stop rather than improvising an erase. See [troubleshooting](TROUBLESHOOTING_EN.md).
 
 **Official Magisk documentation:** https://topjohnwu.github.io/Magisk/install.html

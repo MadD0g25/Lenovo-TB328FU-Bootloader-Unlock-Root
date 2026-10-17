@@ -21,7 +21,7 @@ Note: Lenovo Fastboot reported `unlocked:` with an *empty value* to `fastboot ge
 - Python 3 accessible as `py -3`, Android Platform Tools / `adb.exe` and `fastboot.exe`.
 - `spd_dump.exe` matching the known working build **together in the same folder** with `Channel9.dll`, `Channel.ini`, `custom_exec_no_verify_3ee8.bin`. **Do not trust rehosted executables**; verify SHA-256 as below.
 - Original S200162 partition dumps, particularly `uboot_a`, `sml_a`, `teecfg_a`, `trustos_a`, `miscdata` and `boot_a`, plus verified stock firmware and a recovery plan.
-- The exact V9 source (`tools/v9/sources/tb328fu_v9.py`) and a prebuilt `prepared_current` bundle that matches **all five RAM SHA-256 hashes** in `docs/evidence/SHA256SUMS.txt`. If you do not have permission to redistribute these OEM-derived materials, generate them locally from your **own exact-match firmware/dumps** using the V9 `build` command.
+- The exact V9 source (`tools/v9/sources/tb328fu_v9.py`) and a prebuilt `prepared_current` bundle that matches **all five RAM SHA-256 hashes** in `SHA256SUMS.txt`. If you do not have permission to redistribute these OEM-derived materials, generate them locally from your **own exact-match firmware/dumps** using the V9 `build` command.
 
 Place the working files as follows:
 
@@ -63,7 +63,7 @@ Pre-unlock expected: `TB328FU`, `TB328FU_S200162_250825_ROW`, `_a`, `1`, `green`
 
 ## 4. Exact working binaries and addresses
 
-The five tested RAM files and their exact SHA-256 appear in [SHA256SUMS](../evidence/SHA256SUMS.txt). They must be checked **before** any device action. These are not interchangeable with older SPL/cboot experiments, nor with the V7 images.
+The five tested RAM files and their exact SHA-256 appear in [SHA256SUMS](SHA256SUMS.txt). They must be checked **before** any device action. These are not interchangeable with older SPL/cboot experiments, nor with the V7 images.
 
 | Transfer order | File | Target RAM address |
 | ---: | --- | --- |
@@ -174,7 +174,7 @@ With Android booted and ADB reauthorized:
 "C:\Program Files (x86)\Minimal ADB and Fastboot\adb.exe" shell getprop ro.boot.vbmeta.device_state
 ```
 
-Observed: **`0`, `orange`, `unlocked`**. The owner **repeated these checks after another normal reboot**, with the same result. This is stronger evidence than the ambiguous Recovery text or `timeout reached`. Do not infer unlock from a single flag alone. The next step, tested separately, was [Magisk root](ROOT.md).
+Observed: **`0`, `orange`, `unlocked`**. The owner **repeated these checks after another normal reboot**, with the same result. This is stronger evidence than the ambiguous Recovery text or `timeout reached`. Do not infer unlock from a single flag alone. The next step, tested separately, was [Magisk root](ROOT_EN.md).
 
 ## 10. Attribution and limits
 

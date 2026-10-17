@@ -24,25 +24,26 @@
 
 ## Get started
 
-1. **[Unlock guide (English)](docs/en/UNLOCK.md)** — exact V9 RAM order, preflight, failure conditions, post-run Recovery and proof.
-2. **[Root guide (English)](docs/en/ROOT.md)** — Magisk 30.7, fresh `boot_a`, slot-A Fastboot and recovery.
-3. **[Troubleshooting (English)](docs/en/TROUBLESHOOTING.md)** — especially how to interpret the timeout.
-4. **[Unlock guide (français)](docs/fr/DEVERROUILLAGE.md)** / **[Root guide (français)](docs/fr/ROOT.md)** / **[Dépannage](docs/fr/DEPANNAGE.md)**.
-5. **[Exact file SHA-256 and evidence](docs/evidence/SHA256SUMS.txt)** / **[Redacted V9 log](docs/evidence/V9_UNLOCK_TIMEOUT_REDACTED.log)**.
+1. **[Unlock guide (English)](UNLOCK_EN.md)** — exact V9 RAM order, preflight, failure conditions, post-run Recovery and proof.
+2. **[Root guide (English)](ROOT_EN.md)** — Magisk 30.7, fresh `boot_a`, slot-A Fastboot and recovery.
+3. **[Troubleshooting (English)](TROUBLESHOOTING_EN.md)** — especially how to interpret the timeout.
+4. **[Unlock guide (français)](DEVERROUILLAGE_FR.md)** / **[Root guide (français)](ROOT_FR.md)** / **[Dépannage](DEPANNAGE_FR.md)**.
+5. **[Exact file SHA-256 and evidence](SHA256SUMS.txt)** / **[Redacted V9 log](V9_UNLOCK_TIMEOUT_REDACTED.log)**.
 6. **[Source and licenses](ATTRIBUTION_AND_LICENSES.md)** / **[how to prepare your local binaries](LOCAL_FILES.md)**.
 
-## Layout and publishing
+## Repository layout — guides available at the root
 
 ```
 README.md / README.fr.md
- docs/en/              English full instructions
- docs/fr/              Instructions françaises complètes
- docs/evidence/        Sanitized log, hash reference, observed results
- tools/v9/sources/     Original V9 Python runner and source (not modified)
- tools/verify/         Offline integrity checker
- scripts/windows/      Optional guarded Windows helpers
- local/                Your personal tools and firmware: NEVER commit
+UNLOCK_EN.md / ROOT_EN.md / TROUBLESHOOTING_EN.md
+DEVERROUILLAGE_FR.md / ROOT_FR.md / DEPANNAGE_FR.md
+SHA256SUMS.txt / V9_UNLOCK_TIMEOUT_REDACTED.log / CONFIRMATIONS.md
+tools/v9/sources/     Original V9 Python sources
+scripts/windows/      Guarded Windows scripts
+local/                Local firmware and utilities (NEVER publish)
 ```
+
+All guides are linked **from the repository root**, so GitHub links work whether the project is cloned or viewed online. The ZIP itself has **no parent folder**.
 
 This **public repository package intentionally omits** `spd_dump.exe`, its DLLs, stock Lenovo partitions, patched RAM/boot images, personal logs and device identifiers. They may be proprietary or device-specific. A **separate private archive** preserves the exact validated V9 materials. Read [LOCAL_FILES.md](LOCAL_FILES.md) to set it up. The V9 source can rebuild the RAM bundle **only** from verified exact-build inputs; no other versions are claimed compatible.
 

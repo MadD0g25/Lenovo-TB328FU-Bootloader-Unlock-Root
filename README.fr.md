@@ -24,14 +24,16 @@
 
 ## Parcours recommandé
 
-1. **[Déverrouillage détaillé](docs/fr/DEVERROUILLAGE.md)** : matériel, Windows, V9, transfert RAM, Recovery et vérification.
-2. **[Root Magisk détaillé](docs/fr/ROOT.md)** : image `boot_a`, Magisk 30.7, Fastboot et retour arrière.
-3. **[Dépannage](docs/fr/DEPANNAGE.md)** : timeout, erreur USB, Recovery, restauration.
-4. **[Documentation anglaise](docs/en/UNLOCK.md)** et [root](docs/en/ROOT.md).
-5. **[Empreintes SHA-256](docs/evidence/SHA256SUMS.txt)** et [journal V9 anonymisé](docs/evidence/V9_UNLOCK_TIMEOUT_REDACTED.log).
+1. **[Déverrouillage détaillé](DEVERROUILLAGE_FR.md)** : matériel, Windows, V9, transfert RAM, Recovery et vérification.
+2. **[Root Magisk détaillé](ROOT_FR.md)** : image `boot_a`, Magisk 30.7, Fastboot et retour arrière.
+3. **[Dépannage](DEPANNAGE_FR.md)** : timeout, erreur USB, Recovery, restauration.
+4. **[Documentation anglaise](UNLOCK_EN.md)** et [root](ROOT_EN.md).
+5. **[Empreintes SHA-256](SHA256SUMS.txt)** et [journal V9 anonymisé](V9_UNLOCK_TIMEOUT_REDACTED.log).
 6. **[Fichiers à fournir localement](LOCAL_FILES.md)** et [attribution/licences](ATTRIBUTION_AND_LICENSES.md).
 
 ## Structure et publication
+
+Les guides `.md` sont directement à la **racine** du dépôt. Le ZIP ne contient **aucun dossier principal englobant**. Les outils restent dans `tools/` et les scripts Windows dans `scripts/windows/` afin de conserver leur structure.
 
 Le dépôt public contient les guides FR/EN, les sources Python V9, les scripts CMD de contrôle, des preuves anonymisées et des empreintes. Il **n'inclut pas par défaut** les images Lenovo/Unisoc, `spd_dump.exe`, ses DLL, une image Magisk propre à un appareil ni des identifiants personnels. Ces composants peuvent être propriétaires ou spécifiques à l’appareil. L'**archive privée complète** contient les éléments conservés de l'essai réussi ; elle ne doit pas être publiée telle quelle sans vérification des droits et de son contenu.
 

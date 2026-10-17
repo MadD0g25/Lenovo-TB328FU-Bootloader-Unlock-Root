@@ -246,4 +246,4 @@ Un `fastboot getvar unlocked` ultérieur a renvoyé une valeur **vide** (`unlock
 
 ---
 
-Voir aussi [root Magisk](ROOT.md) et [dépannage](DEPANNAGE.md).
+Voir aussi [root Magisk](ROOT_FR.md) et [dépannage](DEPANNAGE_FR.md).
