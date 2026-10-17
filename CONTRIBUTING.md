@@ -1,0 +1,5 @@
+# Contributions / Contributions
+
+**EN:** Corrections and *verified* device test reports are welcome. Always state model, complete build ID, active slot, test date, source file SHA-256, and whether results survived a normal reboot. Never post serial numbers, userdata, RPMB secrets, passwords or unsigned claims of universal support. Do not submit proprietary firmware dumps or other users' patched boot images to the public repository without confirmed redistribution rights. Distinguish code structure tests from real hardware success. Send security concerns privately to the project owner rather than encouraging risky unverified writes.
+
+**FR :** Les corrections et retours de tests vérifiés sont bienvenus. Toujours indiquer modèle, build complet, slot, date, SHA-256 et persistance après redémarrage. Ne jamais publier numéro de série, données utilisateur, secrets RPMB, mot de passe, images Magisk d'autrui ou composants propriétaires sans droit de redistribution. Distinguer les tests hors ligne d’une réussite matérielle. Éviter tout flashage risqué non validé.
