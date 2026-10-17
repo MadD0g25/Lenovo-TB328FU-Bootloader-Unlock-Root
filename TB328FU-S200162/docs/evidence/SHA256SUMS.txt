@@ -1,0 +1,9 @@
+# V9 RAM images EXACTLY used in confirmed 2026-10-17 experiment
+f0b87ca029eec5ddd3cce7d654d733d182996989eb8e5c729f9748f72806964d  fdl1-boot-v9.bin  # 60036 bytes
+fd2698c4f19e24840d70b6cae65f46d322918e5ba105795f306b11ad00622025  cboot-v9-S200162.bin  # 909188 bytes
+0e47a51ad7596f43597e16373817926f8f5524a0fa7557aa8feb846c8f47ec9b  teecfg-ram.bin  # 124052 bytes
+29160f1f0a0e95619dc5a416daf2b2e8b5bc08037baf960cd3dafd5dc9180ed7  trustos-ram.bin  # 3489348 bytes
+5e0e84e250ecf84dee588a58fde18054ddc8cf4da95c2404f26141868e19a5a5  sml-ram.bin  # 68900 bytes
+
+0d699f4ca7710f4c8f87dbc8c60b94e1621708d2bc5e474fdf0d013a25e89560  boot_a_stock.bin  # 67108864 bytes, tested tablet only
+5c99161ebcd93e0786421608a4dd1950a517db5e5e02229413daf9383c499cfd  magisk_patched.img  # 67108864 bytes, tested tablet only

@@ -1,0 +1,3 @@
+# Needed only for disassembly/emulation; core software uses the Python stdlib.
+capstone==5.0.7
+unicorn==2.1.4
